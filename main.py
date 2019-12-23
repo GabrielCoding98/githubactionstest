@@ -6,4 +6,4 @@ class HelloFunction:
         pass
 
     def helloword(self):
-        return 'hello world'
+        return 'hello'
