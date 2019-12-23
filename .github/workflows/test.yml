@@ -4,13 +4,14 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v1
     - name: Run a one-line script
-      run: python testfile.py
+      run: pip install pytest
+    - name: Run a one-line script
+      run: pytest
     - name: Run a multi-line script
       run: |
         echo Add other actions to build,
